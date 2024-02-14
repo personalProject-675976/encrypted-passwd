@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>重要密码</title>
+        <link href="/layui/css/layui.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <style>
+            .demo-reg-container
+            {
+                width: 720px;
+                margin: 21px auto 0;
+            }
+            .layui-textarea
+            {
+                height: 300px;
+            }
+        </style>
+
+        <div class="demo-reg-container">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <input type="password" name="nickname" value="" lay-verify="required" placeholder="初中因为一句话被起的绰号是？只需要输入拼音的首字母，是三个字母，小写." autocomplete="off" class="layui-input" id="nickname">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <input type="password" name="petName" value="" lay-verify="required" placeholder="小名是？需要输入字母全拼，小写." autocomplete="off" class="layui-input" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <input type="password" name="peopleName" value="" lay-verify="required" placeholder="高中-饭卡-那个人叫张至*？只需要输入*的拼音，小写." autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-reg">获取密码</button>
+                </div>
+                <div class="layui-form-item layui-form-text" id="result-wrapper" hidden>
+                    <div class="layui-input-wrap">
+                        <textarea id="result" class="layui-textarea" disabled></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="/layui/layui.js"></script>
+        <script src="/index.js"></script>
+    </body>
+
+</html>
